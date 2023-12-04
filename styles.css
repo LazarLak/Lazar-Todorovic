@@ -65,7 +65,7 @@ li{
     transform: rotate(180deg);
 }
 .line1{
-    transform: rotate(45deg) translateY(15px);
+    transform: rotate(45deg) translateY(16px);
     
 }
 .line2{
@@ -425,16 +425,7 @@ footer{
     }
     .skills_container{
         margin-bottom: 50px;
-    }
-    .burger{
-        width: 30px;
-        top: 30px;
-        right: 30px;
-    }
-      
-    .line{
-        margin-bottom: 6px;
-    }
+    }  
     .headings2{
         font-size: 3vw;
     }
