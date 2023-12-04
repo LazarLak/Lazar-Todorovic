@@ -1,0 +1,453 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+.alegreya{
+    font-family: 'Alegreya', serif; 
+}
+.textColorYellow{
+    color: #FEE54A;
+}
+.padding200{
+    padding: 50px 0 200px 0;
+}
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.navigation_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    height: 100px;
+    align-items: center;
+    padding: 25px 0;
+}
+li{
+    list-style-type: none;
+}
+.nav_links{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.nav_links:hover{
+    border: 3px solid #000000;
+    border-radius: 30px;
+}
+.burger{
+    display: none;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: all 0.5s ease-out;
+}
+.line{
+    border-bottom: 2px solid #000000;
+    margin-bottom: 10px;
+    transition: all 0.5s ease-out;
+    transform: rotate(180deg);
+}
+.line1{
+    transform: rotate(45deg) translateY(15px);
+    
+}
+.line2{
+    opacity: 0;
+}
+.line3{
+    transform: rotate(-45deg) translateY(-17px);
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.home_heading_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;   
+}
+.heading_home{
+    font-size: 4vw;
+    font-weight: 800; 
+}
+.home_paragraph{
+    font-weight: 500;
+    font-size: 1vw;
+    width: 80%;
+}
+.touch{
+    font-size: 0.8rem;
+    font-weight: 600;
+    width: 110px;
+    border-bottom: 2.5px solid #000000;
+    margin-top: 20px;
+    font-family: 'Alegreya', serif; 
+}
+.touch:hover{
+    cursor: pointer;
+    color: #417394;
+}
+.image_container{
+    width: 45%; 
+    border: 20px solid #FEE54A;
+    border-radius: 500px;
+    text-align: center;
+}
+.home_image{
+    width: 90%;
+}
+
+/* --------ABOUT CONTAINER-------- */
+.about_me_container{
+    padding: 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+}
+.headings{
+font-size: 3vw;
+}
+.headings2{
+    font-size: 2vw;
+}
+.about_me_paragraph{
+    font-size: 2vw;
+    text-align: justify;
+}
+.skills_container{
+ text-align: center;
+ margin-bottom: 100px;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 0;
+}
+.middle_skill_container{
+    border-left: 6px solid #FEE54A;
+    border-right: 6px solid #FEE54A;
+    padding: 0 40px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 0 0 0;
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+.container100{
+    width: 100%;
+    padding-top: 100px;
+    background-color: #2e2e2e;
+    text-align: center;
+}
+.project_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+.project_container1{
+    display: none;
+}
+.project_cards{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: auto;
+}
+.project_images{
+    width: 100%;
+}
+.projectHeading{
+    width: 80%;
+    margin: 0 auto;
+}
+.project_paragraph{
+    font-size: 1.3vw;
+    width: 80%;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Alegreya', serif; 
+}
+.projectButton{
+    color: #FEE54A;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 1vw;
+    
+}
+.projectButton:hover{
+    color: #ffffff;
+    border: none;
+}
+.contact_container{
+    padding-top: 50px;
+}
+.contactHeading{
+    padding: 100px 0;
+}
+.icons_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+.icons{
+    margin: auto 10px;
+}
+.icons:hover{
+    cursor: pointer;
+}
+.icon{
+    width: 50px;
+    
+}
+footer{
+    color: #ffffff;
+    font-size: 1.5vw;
+    padding: 100px 0 50px 0;
+}
+
+
+
+@media(max-width:1200px){
+    .about_me_container{
+        padding: 100px 0;
+    }
+    .container100{
+        padding-top: 50px;
+    }
+    .padding200{
+        padding: 50px 0 100px 0;
+    }
+}
+
+@media (max-width: 768px){
+    .navigation_bar{
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        height: 100px;
+        align-items: center;
+        padding: 35px 0;
+        background-color: #f5f5f5;
+    }
+    .navigation{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        height: 100px;
+        width: 100%;
+        align-items: center;
+        padding: 60px 0 60px 0;
+        background-color: #f5f5f5;
+        
+    }
+    .nav_links{
+        font-size: 0.7rem;
+    }
+    .nav_links:hover{
+        border: 2px solid #000000;
+        padding: 5px 10px;
+    }
+    .burger{
+        display: block;
+        width: 40px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .line{
+        border-bottom: 2px solid #000000;
+        margin-bottom: 10px;
+    }
+    .burger:hover{
+        cursor: pointer;
+    }
+    .container{
+        width: 100%;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home_heading_container{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .heading_home{
+        font-size: 7vw;
+    }
+    .home_paragraph{
+        font-size: 2.5vw;
+    }
+    .image_container{
+        width: 80%;
+    }
+    .about_me_container{
+        gap:50px;
+    }
+    .about_me_paragraph{
+        width: 80%;
+        margin: auto;
+    }
+    .skills{
+        padding: 50px 0;
+    }
+    .project_container1{
+        display: block;
+        width: 100%;
+    }
+    .project_container{
+        display: none;
+    }
+    .project_cards{
+        width: 80%;
+        margin-top: 50px;
+    }
+    .projectHeading{
+        width: 100%;
+        margin: 0;
+    }
+    .project_paragraph{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .icon{
+        width: 30px;
+    }
+    .icons_container{
+        gap: 30px;
+    }
+    .contactHeading{
+        padding: 60px 0;
+    }
+    .padding200{
+        padding: 20px 0;
+    }
+}
+@media(max-width:480px){
+
+    .home{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home_heading_container{
+        width: 100%;
+        margin-top: 80px;
+    }
+    .heading_home{
+        font-size: 13.5vw;
+        text-align: justify;
+    }
+    .home_paragraph{
+        width: 100%;
+        font-size: 3.5vw;
+    }
+    .image_container{
+        width: 90%;
+    }
+    .about_me_container{
+        padding: 50px 0;
+    }
+    .about_me_paragraph{
+        width: 90%;
+    }
+    .project_cards{
+        width: 100%;
+    }
+    .project_paragraph{
+        width: 50%;
+    }
+    .icon{
+        width: 15px;
+    }
+    .icons_container{
+        gap: 15px;
+    }
+    .contactHeading{
+        padding: 0 0 20px 0;
+    }
+    footer{
+        padding: 20px 0;
+    }
+    .padding200{
+        padding: 0;
+    }
+    .project_cards{
+        gap: 10px;
+    }
+    .middle_skill_container{
+        border-left: 3px solid #FEE54A;
+        border-right: 3px solid #FEE54A;
+        padding: 0 20px;
+    }
+    .cards{
+        gap: 20px;
+    }
+    .skills_container{
+        margin-bottom: 50px;
+    }
+    .burger{
+        width: 30px;
+        top: 30px;
+        right: 30px;
+    }
+      
+    .line{
+        margin-bottom: 6px;
+    }
+    .skills{
+        width: 200px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .skill_container_card{
+        border: 4px solid #FEE54A;
+        background-color: #FEE46A;
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .headings2{
+        font-size: 3vw;
+    }
+    .cards{
+        font-size: 2.5vw;
+    }
+    .headings{
+        font-size: 6vw;
+    }
+}
