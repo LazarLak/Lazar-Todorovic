@@ -385,12 +385,17 @@ footer{
     }
     .about_me_paragraph{
         width: 90%;
+        font-size: 3.5vw;
     }
     .project_cards{
         width: 100%;
     }
     .project_paragraph{
-        width: 50%;
+        width: 80%;
+        font-size: 3vw;
+    }
+    .projectButton{
+        font-size: 2.5vw;
     }
     .icon{
         width: 15px;
@@ -430,6 +435,9 @@ footer{
     .line{
         margin-bottom: 6px;
     }
+    .headings2{
+        font-size: 3vw;
+    }
     .skills{
         width: 200px;
         flex-direction: column;
@@ -441,8 +449,8 @@ footer{
         border-radius: 20px;
         padding: 30px;
     }
-    .headings2{
-        font-size: 3vw;
+    .projectHeading{
+        font-size: 5vw;
     }
     .cards{
         font-size: 2.5vw;
